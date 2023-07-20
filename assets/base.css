@@ -1,0 +1,132 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --blur-black:#333;
+    --text-blur:#ccc;
+    --primary-color:#ee4d2d;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* min-width: 800px; */
+}
+.grid-full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+    
+}
+.grid__column-2{
+    width: 16.6666666%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.grid__column-2-4{
+    width: 20%;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 8px;
+    
+}
+.grid__column-10{
+    width: 83.3334%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.mt-4{
+    margin: 0 4px;
+  }
+
+@keyframes showin{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes noticegrowth{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes minimize{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    display: none;
+}
+.modal__layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+}
+.modal__body{
+    margin: auto;
+    z-index: 2;
+    border-radius: 5px;
+}
+.form__font-regulary{
+    text-decoration: none;
+    color: #EE4D2D;
+}
+.btn{
+    border: none;
+    min-width: 90px;
+    height: 34px;
+    background-color: var(--white-color);
+    display: inline-block;
+    margin: 8px 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn:nth-child(2){
+    margin-left: 12px;
+}
+.primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.margin-top-50px{
+    margin-top: 50px;
+}
+
+.margin-bottom-50px{
+    margin-bottom: 50px;
+}

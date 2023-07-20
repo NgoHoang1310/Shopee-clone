@@ -1,0 +1,8 @@
+@media (max-width: 390px) {
+    .grid{
+        width: 290px;
+        max-width: 100%;
+        margin: 0 auto;
+        /* min-width: 800px; */
+    }
+}
